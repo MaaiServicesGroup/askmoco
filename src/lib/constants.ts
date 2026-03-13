@@ -9,3 +9,12 @@ export const LOCATION = "Savannah, GA";
 
 export const MAAI_URL = "https://maaidesigns.com";
 export const MAAI_NAME = "Maai Designs";
+
+export const NAV_LINKS = [
+  { href: "/", label: "Home" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#early-access", label: "Early Access" },
+];
+
+export const BLOG_DESCRIPTION =
+  "Practical guides on SEO, digital marketing, and online presence for small business owners. No jargon, just results.";
