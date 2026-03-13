@@ -1,0 +1,80 @@
+"use client";
+
+export default function Hero() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Animated grid background */}
+      <div className="hero-grid absolute inset-0" />
+
+      {/* Gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-accent/5 blur-[120px] orb" />
+      <div
+        className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-accent/8 blur-[100px] orb"
+        style={{ animationDelay: "-4s" }}
+      />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
+        {/* MOCO wordmark */}
+        <div className="animate-fade-in-up mb-8">
+          <h1 className="font-[var(--font-heading)] text-7xl sm:text-8xl md:text-9xl font-bold tracking-tight">
+            <span className="bg-gradient-to-r from-off-white via-accent-light to-accent bg-clip-text text-transparent">
+              MOCO
+            </span>
+          </h1>
+          <div className="mt-3 flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase text-muted">
+            <span>Marketing</span>
+            <span className="text-accent">·</span>
+            <span>Operations</span>
+            <span className="text-accent">·</span>
+            <span>Content</span>
+            <span className="text-accent">·</span>
+            <span>Outreach</span>
+          </div>
+        </div>
+
+        {/* Headline */}
+        <h2 className="animate-fade-in-up delay-100 font-[var(--font-heading)] text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-6 text-off-white opacity-0">
+          Your Digital Team Member
+        </h2>
+
+        {/* Description */}
+        <p className="animate-fade-in-up delay-200 text-lg sm:text-xl text-soft leading-relaxed max-w-2xl mx-auto mb-10 opacity-0">
+          MOCO is the always-on digital team behind your website, content, and
+          social media. Built by Maai Designs to give small businesses the same
+          quality of online presence that big companies take for granted.
+        </p>
+
+        {/* CTA */}
+        <div className="animate-fade-in-up delay-300 opacity-0">
+          <a
+            href="#early-access"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-charcoal font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] hover:-translate-y-0.5"
+          >
+            Get Early Access
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="animate-fade-in-up delay-400 opacity-0 mt-16">
+          <div className="w-6 h-10 border-2 border-muted/40 rounded-full mx-auto flex justify-center">
+            <div className="w-1.5 h-3 bg-accent/60 rounded-full mt-2 animate-bounce" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
