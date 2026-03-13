@@ -7,7 +7,7 @@ export const SITE_TAGLINE = "Everything your business needs online. Done.";
 export const CONTACT_EMAIL = "moco@askmoco.com";
 export const LOCATION = "Savannah, GA";
 
-export const MAAI_URL = "https://maaidesigns.com";
+export const MAAI_URL = "https://www.maaidesigns.com";
 export const MAAI_NAME = "Maai Designs";
 
 export const NAV_LINKS = [
