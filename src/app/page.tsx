@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
-import Capabilities from "@/components/Capabilities";
+import Services from "@/components/Services";
+import WhyMoco from "@/components/WhyMoco";
 import HowItWorks from "@/components/HowItWorks";
 import InterestForm from "@/components/InterestForm";
 import Footer from "@/components/Footer";
@@ -14,22 +15,27 @@ export default function Home() {
     {
       question: "What is MOCO?",
       answer:
-        "MOCO stands for Marketing, Operations, Content, Outreach. It is the always-on digital team member built by Maai Designs to handle day-to-day digital execution for small businesses — including SEO, content creation, social media management, and website maintenance.",
+        "MOCO is a done-for-you digital team built by Maai Designs. We handle your website, blog, social media, newsletters, ads, review management, and lead capture so you can focus on running your business.",
     },
     {
-      question: "How does MOCO work with Maai Designs?",
+      question: "What services does MOCO include?",
       answer:
-        "Maai Designs builds your website and digital strategy. MOCO then takes over day-to-day execution — handling content updates, social media posting, SEO optimization, and performance monitoring so you can focus on running your business.",
+        "MOCO covers eight core areas: website construction and management, blog management, newsletters, forms and lead capture, review management, social media management, Google Ads, and Meta Ads.",
     },
     {
       question: "Who is MOCO for?",
       answer:
-        "MOCO is built for small business owners who need a professional online presence but don't have the time, budget, or staff to manage it all in-house. Currently available exclusively through Maai Designs.",
+        "MOCO is built for small business owners who need a professional online presence but don't have the time, staff, or budget to manage it all in-house.",
     },
     {
-      question: "What does MOCO cost?",
+      question: "How does pricing work?",
       answer:
-        "MOCO is currently in early access. Sign up on our website to be the first to know when it's available and to receive early pricing information.",
+        "MOCO operates on a fixed monthly cost. No hourly billing, no surprise invoices. Contact us to learn about plans for your business.",
+    },
+    {
+      question: "How does MOCO work with Maai Designs?",
+      answer:
+        "Maai Designs builds your website and digital foundation. MOCO then handles the ongoing execution — content, social media, ads, reviews, and more — on a day-to-day basis.",
     },
   ]);
 
@@ -45,7 +51,8 @@ export default function Home() {
       />
       <main>
         <Hero />
-        <Capabilities />
+        <Services />
+        <WhyMoco />
         <HowItWorks />
 
         {/* Recent blog posts section */}

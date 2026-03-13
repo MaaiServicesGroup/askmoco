@@ -145,4 +145,4 @@ Do these five things consistently and you'll be ahead of 90% of your local compe
 
 ---
 
-*Need help implementing SEO for your business? That's exactly what MOCO does. [Get early access](/blog/../#early-access) and let your digital team member handle it.*
+*Need help implementing SEO for your business? That's exactly what MOCO does. [Get started](/blog/../#get-started) and let your done-for-you digital team handle it.*

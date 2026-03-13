@@ -7,19 +7,19 @@ const steps = [
   {
     number: "01",
     title: "We build your foundation",
-    description: `${MAAI_NAME} creates your website and digital strategy — tailored to your business, your market, and your goals.`,
+    description: `${MAAI_NAME} creates your website, sets up your blog, configures your forms, and builds your ad accounts — everything tailored to your business, your market, and your goals.`,
   },
   {
     number: "02",
     title: "MOCO takes over execution",
     description:
-      "Content, social media, website updates, and performance reports — all handled day-to-day without you lifting a finger.",
+      "Blog posts, social media, newsletters, review requests, ad campaigns, and website updates — all handled day-to-day without you lifting a finger.",
   },
   {
     number: "03",
     title: "You focus on your business",
     description:
-      "While you do what you do best, MOCO keeps your digital presence sharp, active, and growing.",
+      "While you serve your customers, MOCO keeps your digital presence sharp, active, and growing — with monthly reporting so you always know what's working.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function HowItWorks() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 sm:py-32 px-6 bg-charcoal-light/50"
+      className="py-24 sm:py-32 px-6"
     >
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 reveal">
@@ -55,7 +55,7 @@ export default function HowItWorks() {
             How It Works
           </p>
           <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl md:text-5xl font-bold text-off-white">
-            Simple by design
+            Three steps, zero hassle
           </h2>
         </div>
 
@@ -85,7 +85,7 @@ export default function HowItWorks() {
 
         <div className="reveal mt-12 text-center">
           <p className="text-muted text-sm">
-            Currently available exclusively through{" "}
+            Powered by{" "}
             <a
               href={MAAI_URL}
               target="_blank"

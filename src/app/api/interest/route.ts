@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
     // Log submission for now — replace with email delivery or database write
     // when RESEND_API_KEY or DATABASE_URL are configured
-    console.log("[MOCO Interest]", {
+    console.log("[MOCO Lead]", {
       name,
       email,
       business: business || "N/A",
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     //     body: JSON.stringify({
     //       from: "MOCO <noreply@askmoco.com>",
     //       to: "moco@askmoco.com",
-    //       subject: `New Early Access Signup: ${name}`,
+    //       subject: `New MOCO Inquiry: ${name}`,
     //       html: `<p><strong>Name:</strong> ${name}</p>
     //              <p><strong>Email:</strong> ${email}</p>
     //              <p><strong>Business:</strong> ${business || "N/A"}</p>

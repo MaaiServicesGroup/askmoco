@@ -147,4 +147,4 @@ The good news: most of these improvements are either free or affordable. And onc
 
 ---
 
-*MOCO builds and maintains your complete digital presence — website, content, social media, and SEO — all handled. [Get early access](/blog/../#early-access) and let your digital team member handle the details.*
+*MOCO builds and maintains your complete digital presence — website, content, social media, and SEO — all handled. [Get started](/blog/../#get-started) and let your done-for-you digital team handle the details.*

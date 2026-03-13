@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { SERVICES } from "@/lib/constants";
 
 const interestOptions = [
-  { id: "website", label: "Website" },
-  { id: "content", label: "Content" },
-  { id: "social", label: "Social Media" },
+  ...SERVICES.map((s) => ({ id: s.id, label: s.shortTitle })),
   { id: "everything", label: "Everything" },
 ];
 
@@ -68,7 +67,7 @@ export default function InterestForm() {
 
   if (status === "success") {
     return (
-      <section id="early-access" className="py-24 sm:py-32 px-6">
+      <section id="get-started" className="py-24 sm:py-32 px-6">
         <div className="max-w-lg mx-auto text-center">
           <div className="w-16 h-16 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-6">
             <svg className="w-8 h-8 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -76,10 +75,10 @@ export default function InterestForm() {
             </svg>
           </div>
           <h2 className="font-[var(--font-heading)] text-3xl font-bold text-off-white mb-4">
-            You&apos;re on the list
+            We got it
           </h2>
           <p className="text-soft text-lg">
-            Thanks! We&apos;ll be in touch when MOCO is ready for you.
+            Thanks! We&apos;ll review your needs and follow up within one business day.
           </p>
         </div>
       </section>
@@ -87,17 +86,17 @@ export default function InterestForm() {
   }
 
   return (
-    <section ref={sectionRef} id="early-access" className="py-24 sm:py-32 px-6">
+    <section ref={sectionRef} id="get-started" className="py-24 sm:py-32 px-6">
       <div className="max-w-lg mx-auto">
         <div className="text-center mb-10 reveal">
           <p className="text-accent font-semibold tracking-widest uppercase text-sm mb-3">
-            Early Access
+            Get Started
           </p>
           <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl font-bold text-off-white mb-3">
-            Be the first to know
+            Let&apos;s talk about your business
           </h2>
           <p className="text-soft">
-            Sign up and we&apos;ll let you know when MOCO is ready.
+            Tell us a bit about what you need, and we&apos;ll follow up with a plan.
           </p>
         </div>
 
@@ -145,7 +144,7 @@ export default function InterestForm() {
 
           <fieldset>
             <legend className="block text-sm font-medium text-soft mb-2.5">
-              What interests you most?
+              Which services interest you?
             </legend>
             <div className="flex flex-wrap gap-2.5">
               {interestOptions.map((opt) => (
@@ -179,7 +178,7 @@ export default function InterestForm() {
                 Submitting...
               </span>
             ) : (
-              "Get Early Access"
+              "Get Started"
             )}
           </button>
 

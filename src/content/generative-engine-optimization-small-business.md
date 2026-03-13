@@ -149,4 +149,4 @@ The businesses that show up across all four channels will dominate their markets
 
 ---
 
-*MOCO helps small businesses stay visible across every search channel — traditional, local, and AI-powered. [Get early access](/blog/../#early-access) to your digital team member.*
+*MOCO helps small businesses stay visible across every search channel — traditional, local, and AI-powered. [Get started](/blog/../#get-started) with your done-for-you digital team.*

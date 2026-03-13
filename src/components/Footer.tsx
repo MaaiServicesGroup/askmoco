@@ -14,8 +14,8 @@ export default function Footer() {
               MOCO
             </p>
             <p className="text-muted text-sm leading-relaxed">
-              Your always-on digital team member. Marketing, Operations,
-              Content, Outreach.
+              Your done-for-you digital team. Website, blog, social media,
+              ads, and more — managed for small businesses.
             </p>
           </div>
 
@@ -32,10 +32,10 @@ export default function Footer() {
                 Blog
               </Link>
               <Link
-                href="/#early-access"
+                href="/#get-started"
                 className="text-muted text-sm hover:text-accent transition-colors block"
               >
-                Early Access
+                Get Started
               </Link>
               <a
                 href={MAAI_URL}

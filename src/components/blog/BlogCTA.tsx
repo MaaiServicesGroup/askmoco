@@ -11,10 +11,10 @@ export default function BlogCTA() {
         team member take over.
       </p>
       <Link
-        href="/#early-access"
+        href="/#get-started"
         className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-charcoal font-semibold px-6 py-3 rounded-full text-sm transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,180,216,0.3)]"
       >
-        Get Early Access
+        Get Started
       </Link>
     </div>
   );

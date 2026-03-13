@@ -19,7 +19,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} — Your Digital Team Member`,
+    default: `${SITE_NAME} — Your Done-for-You Digital Team`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: `${SITE_NAME} — Your Digital Team Member`,
+    title: `${SITE_NAME} — Your Done-for-You Digital Team`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
         url: "/og/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "MOCO — Marketing. Operations. Content. Outreach.",
+        alt: "MOCO — Your done-for-you digital team for small businesses.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Your Digital Team Member`,
+    title: `${SITE_NAME} — Your Done-for-You Digital Team`,
     description: SITE_DESCRIPTION,
     images: ["/og/og-image.jpg"],
   },

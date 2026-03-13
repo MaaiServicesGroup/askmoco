@@ -6,6 +6,7 @@ import {
   LOCATION,
   MAAI_URL,
   MAAI_NAME,
+  SERVICES,
 } from "./constants";
 import { BlogPost } from "./blog";
 
@@ -113,9 +114,9 @@ export function getServiceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "MOCO Digital Team Services",
+    name: "MOCO Done-for-You Digital Services",
     description:
-      "Always-on digital team member handling marketing, operations, content, and outreach for small businesses.",
+      "Done-for-you digital team handling website management, blog content, social media, newsletters, ads, reviews, and lead capture for small businesses.",
     provider: {
       "@type": "Organization",
       name: MAAI_NAME,
@@ -131,12 +132,6 @@ export function getServiceSchema() {
       "@type": "Place",
       name: LOCATION,
     },
-    serviceType: [
-      "SEO Services",
-      "Content Marketing",
-      "Social Media Management",
-      "Website Management",
-      "Digital Marketing",
-    ],
+    serviceType: SERVICES.map((s) => s.title),
   };
 }

@@ -77,7 +77,7 @@ export default function BlogIndex() {
           {/* Post grid */}
           {posts.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-muted text-lg">Posts coming soon.</p>
+              <p className="text-muted text-lg">No posts yet. Check back soon.</p>
             </div>
           ) : (
             <div className="space-y-8">
@@ -129,19 +129,19 @@ export default function BlogIndex() {
             </div>
           )}
 
-          {/* CTA to early access */}
+          {/* CTA to get started */}
           <div className="mt-16 text-center border border-slate/20 rounded-2xl p-8 bg-charcoal-light/30">
             <p className="text-off-white font-[var(--font-heading)] text-xl font-semibold mb-2">
               Want MOCO to handle all this for your business?
             </p>
             <p className="text-soft mb-6">
-              Get early access and let your digital team member take over.
+              Let your done-for-you digital team take over.
             </p>
             <Link
-              href="/#early-access"
+              href="/#get-started"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-charcoal font-semibold px-6 py-3 rounded-full transition-all duration-300"
             >
-              Get Early Access
+              Get Started
             </Link>
           </div>
         </div>
