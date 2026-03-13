@@ -27,6 +27,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: `${SITE_NAME} — Your Digital Team Member`,
     description: SITE_DESCRIPTION,
