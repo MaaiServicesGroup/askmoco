@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MAAI_URL, MAAI_NAME, CONTACT_EMAIL, LOCATION } from "@/lib/constants";
+import { MAAI_URL, MAAI_NAME, CONTACT_EMAIL, LOCATION, BOOKING_URL } from "@/lib/constants";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -61,6 +61,14 @@ export default function Footer() {
                 {CONTACT_EMAIL}
               </a>
               <p className="text-muted text-sm">{LOCATION}</p>
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted text-sm hover:text-accent transition-colors block"
+              >
+                Book a Call
+              </a>
             </div>
           </div>
         </div>

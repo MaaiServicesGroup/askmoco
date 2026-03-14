@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, BOOKING_URL } from "@/lib/constants";
 
 const interestOptions = [
   ...SERVICES.map((s) => ({ id: s.id, label: s.shortTitle })),
@@ -77,9 +77,20 @@ export default function InterestForm() {
           <h2 className="font-[var(--font-heading)] text-3xl font-bold text-off-white mb-4">
             We got it
           </h2>
-          <p className="text-soft text-lg">
+          <p className="text-soft text-lg mb-6">
             Thanks! We&apos;ll review your needs and follow up within one business day.
           </p>
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-charcoal font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,180,216,0.3)]"
+          >
+            Or book a call now
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
         </div>
       </section>
     );

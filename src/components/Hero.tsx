@@ -1,5 +1,7 @@
 "use client";
 
+import { BOOKING_URL } from "@/lib/constants";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -61,10 +63,12 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="#get-started"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-accent hover:text-accent-light font-semibold px-6 py-3 rounded-full text-lg transition-all duration-300 border border-accent/30 hover:border-accent/60"
           >
-            Get Started
+            Book a Call
             <svg
               className="w-4 h-4"
               fill="none"
@@ -75,7 +79,7 @@ export default function Hero() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
               />
             </svg>
           </a>

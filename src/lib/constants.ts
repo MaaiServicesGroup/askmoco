@@ -9,6 +9,8 @@ export const LOCATION = "Savannah, GA";
 
 export const MAAI_URL = "https://www.maaidesigns.com";
 export const MAAI_NAME = "Maai Designs";
+export const BOOKING_URL =
+  "https://calendly.com/connor-ohearn-maai-designs/30min";
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
